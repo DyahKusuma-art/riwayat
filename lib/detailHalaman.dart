@@ -62,6 +62,7 @@ class _detailHalamanState extends State<detailHalaman> {
                         ),
                         Padding(padding: EdgeInsets.only(top: 5.0)),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Column(
                               children: [
@@ -160,7 +161,8 @@ class _detailHalamanState extends State<detailHalaman> {
                             child: Align(
                               alignment: Alignment.bottomRight,
                               child: Text.rich(TextSpan(
-                                text: "Rp" + widget.list[widget.index]['ongkir'],
+                                text:
+                                    "Rp" + widget.list[widget.index]['ongkir'],
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black54,
@@ -189,7 +191,8 @@ class _detailHalamanState extends State<detailHalaman> {
                             child: Align(
                               alignment: Alignment.bottomRight,
                               child: Text.rich(TextSpan(
-                                text: "Rp" + widget.list[widget.index]['diskon'],
+                                text:
+                                    "Rp" + widget.list[widget.index]['diskon'],
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black54,
@@ -233,17 +236,11 @@ class _detailHalamanState extends State<detailHalaman> {
                   thickness: 2,
                 ),
                 IntrinsicHeight(
-
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
-
-                          Text(
-                            "Metode Pembayaran"
-                          )
-                        ],
+                        children: [Text("Metode Pembayaran")],
                       ),
                       Row(
                         children: [
@@ -317,7 +314,6 @@ class _detailHalamanState extends State<detailHalaman> {
                     )
                   ],
                 ),
-
               ],
             ),
           )),
